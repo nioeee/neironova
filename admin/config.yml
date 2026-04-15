@@ -1,8 +1,7 @@
 backend:
   name: github
-  repo: nioeee/neironova          # ← твой никнейм и репозиторий (уже правильно)
+  repo: nioeee/neironova
   branch: main
-  auth_type: implicit             # ← ЭТО САМАЯ ВАЖНАЯ СТРОКА, КОТОРОЙ НЕ ХВАТАЛО
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
