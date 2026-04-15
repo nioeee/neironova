@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>НейроNova • Админ-панель</title>
-  <script src="https://unpkg.com/decap-cms@3.3.2/dist/decap-cms.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
     body {
@@ -21,16 +21,23 @@
       gap: 20px;
     }
     .loader {
-      font-size: 28px;
-      font-weight: 600;
+      font-size: 32px;
+      font-weight: 700;
       color: #c026d3;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+    }
+    .status {
+      color: #a855f7;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <div class="loader">НейроNova</div>
-  <div style="color:#a855f7; font-size:18px;">Админка загружается...</div>
-  <p style="color:#666; font-size:13px; margin-top:40px;">Первый запуск может занять до 30 секунд</p>
+  <div class="loader">НЕЙРОNOVA</div>
+  <div class="status">Админка загружается... (новый CDN)</div>
+  <p style="color:#666; font-size:13px; max-width:300px; text-align:center;">
+    Первый запуск может занять до 20 секунд.<br>
+    Если висит дольше — нажми Ctrl + Shift + R
+  </p>
 </body>
 </html>
