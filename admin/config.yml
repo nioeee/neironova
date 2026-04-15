@@ -2,6 +2,7 @@ backend:
   name: github
   repo: nioeee/neironova
   branch: main
+  open_authoring: true   # ← это важно для работы без сложной авторизации
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
