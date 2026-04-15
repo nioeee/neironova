@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: nioeee/neironova          # ← ОБЯЗАТЕЛЬНО замени на свой GitHub-логин и название репозитория
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Статьи блога"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Дата", name: "date", widget: "datetime"}
+      - {label: "Краткое описание", name: "excerpt", widget: "text"}
+      - {label: "Тело статьи", name: "body", widget: "markdown"}
+      - {label: "Изображение", name: "image", widget: "image"}
+
+  - name: "courses"
+    label: "Курсы"
+    folder: "content/courses"
+    create: true
+    fields:
+      - {label: "Название курса", name: "title", widget: "string"}
+      - {label: "Цена", name: "price", widget: "string"}
+      - {label: "Описание", name: "description", widget: "markdown"}
+      - {label: "Длительность", name: "duration", widget: "string"}
+
+  - name: "cases"
+    label: "Кейсы"
+    folder: "content/cases"
+    create: true
+    fields:
+      - {label: "Имя героя", name: "name", widget: "string"}
+      - {label: "Доход", name: "income", widget: "string"}
+      - {label: "История", name: "story", widget: "markdown"}
+      - {label: "Аватар", name: "avatar", widget: "image"}
