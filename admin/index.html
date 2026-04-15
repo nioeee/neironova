@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>НейроNova • Админ-панель</title>
-  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.3.2/dist/decap-cms.js"></script>
   <style>
     body {
       margin: 0;
@@ -12,11 +11,18 @@
       background: #0a0a0a;
       color: #fff;
       font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
   </style>
 </head>
 <body>
-  <!-- Decap CMS вставит сюда весь свой интерфейс -->
+  <!-- Здесь Decap CMS будет рисовать всю панель -->
   <div id="nc-root"></div>
+
+  <!-- Скрипт в самом конце body — это решает ошибку appendChild -->
+  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.3.2/dist/decap-cms.js"></script>
 </body>
 </html>
